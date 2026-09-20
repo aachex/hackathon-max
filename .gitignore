@@ -47,6 +47,7 @@ out/
 ### Java / Gradle build artifacts ###
 *.class
 *.log
+.ctxt
 .mtj.tmp/
 *.jar
 *.war
