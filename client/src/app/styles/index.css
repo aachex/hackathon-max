@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* @font-face {
+    font-family: 'custom';
+    src: url('../../shared/assets/fonts/PlusJakartaSans-VariableFont_wght.woff2') format('woff2'),
+         url('../../shared/assets/fonts/PlusJakartaSans-VariableFont_wght.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+} */
+
+body {
+    padding: 0;
+    margin: 0;
+    /* font-family: "custom", sans-serif; */
+}
