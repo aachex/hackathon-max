@@ -29,15 +29,6 @@ public class BotConfig {
         return MaxLongPollingConsumer.builder()
                 .api(api)
                 .handler(update -> {
-                    if (update instanceof MessageCreatedUpdate msg) {
-                        String text = msg.message().body().text();
-                        Long chatId = msg.message().recipient().chatId();
-                        if (text != null && chatId != null) {
-                            api.sendMessage(new NewMessageBody(text, null, null, null, null))
-                                    .chatId(chatId)
-                                    .execute();
-                        }
-                    }
                 })
                 .onError(e -> log.error("Ошибка long polling", e))
                 .build();
